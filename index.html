@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JWave Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>JWave Radio</header>
+
+    <div class="container">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="audio-player-container" class="player">
+        <audio id="audio" src="https://ice.jwave-radio.cf/stream.mp3" preload="metadata" loop crossorigin="anonymous"></audio>
+        <div class="row">
+            <div class="play col">
+                <div id="now-playing"></div>
+                <button id="play-icon" class="float-left">
+                    <i class="fa-solid fa-play" id="fa-play-icon"></i>
+                </button>
+            </div>
+            <div class="volume col">
+                <div class="float-left" id="volume__inner">
+                    <button>
+                        <i id="mute-icon" class="fas fa-volume-up"></i>
+                    </button>
+                    <div class="slider">
+                        <input type="range" id="volume-slider" max="100" value="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/foobar404/wave.js/dist/bundle.iife.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/song_name_update.js"></script>
+    <script src="https://kit.fontawesome.com/283ce63e66.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #6e6a68;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(110 106 104 / 95%);
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    font-size: 35px;
+    font-weight: 600;
+    color: #cfcfcf;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.container {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    width: 70%;
+}
+
+.row {
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+
+    padding: 25px;
+}
+
+.col {
+    -ms-flex-preffered-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 0;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+}
+
+#now-playing {
+    margin: 10px 2.5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    width: 100%;
+}
+
+.fa-solid, .fas {
+    font-size: 25px;
+    color: #E7B878;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-left {
+    float: left;
+}
