@@ -14,9 +14,10 @@ button {
     --volume-before-width: 100%;
     --buffered-width: 0%;
     width: 100%;
-    background-color: rgb(39 39 39 / 95%);
+    background-color: rgb(39 39 39 / 85%);
     color: #fff;
     flex-shrink: 0;
+    z-index: 100;
 }
 
 #play-icon {

@@ -12,6 +12,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    overflow: hidden;
 }
 
 header {
@@ -34,10 +36,25 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 canvas {
-    width: 70%;
+    position: absolute;
+    z-index: 0;
+}
+
+#canvas0 {
+    left: -50%;
+}
+
+#canvas1 {
+    right: -50%;
+}
+
+#canvas2 {
+    position: relative;
+    bottom: -15%;
 }
 
 .row {
@@ -64,7 +81,7 @@ canvas {
 }
 
 #now-playing {
-    margin: 10px 2.5%;
+    /*margin: 10px 2.5%;*/
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
