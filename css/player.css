@@ -21,6 +21,7 @@ button {
 }
 
 #play-icon {
+    margin-right: 20px;
 }
 
 #volume-slider {
@@ -31,6 +32,9 @@ button {
     margin: 0 2.5%;
 }
 
+#mute-icon-button {
+    margin-left: 20px;
+}
 #volume__inner {
     display: flex;
     justify-content: center;
