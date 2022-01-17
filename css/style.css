@@ -81,7 +81,7 @@ canvas {
 }
 
 #now-playing {
-    /*margin: 10px 2.5%;*/
+    margin: 10px 2.5%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -89,7 +89,7 @@ canvas {
     font-size: 20px;
     font-weight: 600;
 
-    width: 100%;
+    width: 75%;
 }
 
 .fa-solid, .fas {
